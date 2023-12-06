@@ -5,9 +5,15 @@ variable "vpc_name"{
 }
 variable "environment"{
 }
+variable "ami" {
+    type = string
+    default = "ami-005e54dee72cc1d00"
+}
 
-#variable "ami"{  
-#}
+variable "instance_type" {
+    type = string
+    default = "t2.micro"
+}
 #variable "tenant_name"{
 #}
 ##variable "instance_name"{
@@ -15,6 +21,4 @@ variable "environment"{
 
 #variable "vpc_subnet_name"{
 #}
-# create an Instance variables
-#variable "instance_type" {
-#}
+
