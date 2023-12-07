@@ -14,10 +14,8 @@ variable "instance_type" {
     type = string
     default = "t2.micro"
 }
-#variable "tenant_name"{
-#}
-##variable "instance_name"{
-#}
+variable "instance_name"{
+}
 
 #variable "vpc_subnet_name"{
 #}

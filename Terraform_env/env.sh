@@ -13,9 +13,13 @@ region="\"$region\""
 echo "Please enter the name for your VPC:"
 read vpc_name
 vpc_name="\"$vpc_name\""
+# Spin up an instance
+echo -e 'What is the name that you would like for your instance:\nThis will be a t2.micro.instance as it is free tier eligible'
+read instance_name
+instance_name="\"$instance_name\""
 # Write the variables named to a .tfvars file
 for thing in \
-environment vpc_name region\
+environment region vpc_name instance_name  \
 
 do 
 echo $thing=${!thing}>>terraform.tfvars
